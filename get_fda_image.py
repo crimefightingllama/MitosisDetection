@@ -98,12 +98,13 @@ def FDA_source_to_target_np(src_img, trg_img, L=0.1 ):
 
 
 if __name__ == '__main__':
-    img_path = './ori_png/'
+    img_path = './test/'
     dir_path = './fda_data/'
     for i in range(1, 2):
         output_path = os.path.join(dir_path, 's{}'.format(i))
+        print(output_path)
         make_dir(output_path)
-        pair_csv = pd.read_csv('./pair_{}.csv'.format(i),)
+        pair_csv = pd.read_csv('fda_data/pair_{}.csv'.format(i),)
         for j in range(len(pair_csv)):
 
             src_name = pair_csv.loc[j, 'source_img']
