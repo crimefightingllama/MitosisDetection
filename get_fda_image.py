@@ -136,5 +136,5 @@ if __name__ == '__main__':
 
             # scipy.misc.toimage(src_in_trg, cmin=0.0, cmax=255.0).save(os.path.join(output_path, src_name))   #old scipy
             Image.fromarray(src_in_trg,mode='RGB').save(os.path.join(output_path, src_name))   #newer function, check modes
-            Print("saved ", src_name)
+            print("saved ", src_name)
 
