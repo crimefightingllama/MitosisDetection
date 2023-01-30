@@ -106,8 +106,8 @@ if __name__ == '__main__':
         make_dir(output_path)
         pair_csv = pd.read_csv('fda_data/pair_{}.csv'.format(i),)
         # for j in range(len(pair_csv)): #running all the pairs
-        for j in range(1,2): #running 1 pair
-
+        for j in range(0,2): #running 2 pairs
+            print(j)
             src_name = pair_csv.loc[j, 'source_img']
             trg_name = pair_csv.loc[j, 'target_img']
             
