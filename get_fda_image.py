@@ -134,7 +134,7 @@ if __name__ == '__main__':
 
             src_in_trg = src_in_trg.transpose((1,2,0))
 
-            scipy.misc.toimage(src_in_trg, cmin=0.0, cmax=255.0).save(os.path.join(output_path, src_name))
-
+            # scipy.misc.toimage(src_in_trg, cmin=0.0, cmax=255.0).save(os.path.join(output_path, src_name))   #old scipy
+            Image.fromarray(src_in_trg).save(os.path.join(output_path, src_name))   #newer function, check modes
 
 
