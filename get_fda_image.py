@@ -98,8 +98,8 @@ def FDA_source_to_target_np(src_img, trg_img, L=0.1 ):
 
 
 if __name__ == '__main__':
-    img_path = './test/'
-    dir_path = './fda_data/'
+    img_path = '/content/MitosisDetection/test/'
+    dir_path = 'content/MitosisDetection/fda_data/'
     for i in range(1, 2):
         output_path = os.path.join(dir_path, 's{}'.format(i))
         print('output path: ' , output_path)
