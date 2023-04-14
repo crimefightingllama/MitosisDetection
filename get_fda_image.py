@@ -104,7 +104,7 @@ if __name__ == '__main__':
         output_path = os.path.join(dir_path, 's{}'.format(i))
         print('output path: ' , output_path)
         make_dir(output_path)
-        pair_csv = pd.read_csv('fda_data/pair_{}.csv'.format(i),)
+        pair_csv = pd.read_csv('/content/MitosisDetection/fda_data/pair_{}.csv'.format(i),)
         # for j in range(len(pair_csv)): #running all the pairs
         for j in range(0,1): #running 1 pair
             print(j)
