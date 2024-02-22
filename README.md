@@ -1,6 +1,6 @@
 
 ## A Generalizable and Robust Deep Learning Algorithm for Mitosis Detection in Multicenter Breast Histopathological Images(*Medical Image Analysis*)
-
+This is forked and adapted from 
 
 [Journal Link](https://www.sciencedirect.com/science/article/abs/pii/S1361841522003310)
 
